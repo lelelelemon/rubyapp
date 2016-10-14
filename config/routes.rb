@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+  resources :pins
+  devise_for :users 
+  
   get 'contact/faq'
 
   root 'home#index'
